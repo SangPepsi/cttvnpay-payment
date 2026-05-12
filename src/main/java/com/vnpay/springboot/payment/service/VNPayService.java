@@ -80,7 +80,7 @@ public class VNPayService {
         String vnp_CreateDate = formatter.format(cld.getTime());
         vnp_Params.put("vnp_CreateDate", vnp_CreateDate);
 
-        cld.add(Calendar.MINUTE, 9);
+        cld.add(Calendar.MINUTE, 10);
         String vnp_ExpireDate = formatter.format(cld.getTime());
         vnp_Params.put("vnp_ExpireDate", vnp_ExpireDate);
 
@@ -112,7 +112,7 @@ public class VNPayService {
     }
 
 
-    // ------------------- 2. XỬ LÝ TRANG TRẢ VỀ (RETURN URL - Đã có) -------------------
+    // ------------------- 2. XỬ LÝ TRANG TRẢ VỀ (RETURN URL) -------------------
 
     public int processVnPayReturn(Map<String, String> vnpParams) {
 
